@@ -27,8 +27,10 @@ class CLI():
     def get_user_choice(self):
         try:
             self._user_input = input(f'''\n{Format.BLUE}Which house would you like see more info for?\n{Format.CLEAR}''')
-            if self._user_input == 'exit': return self.goodbye()
-            if not self.valid_input(self._user_input) : raise ValueError
+            if self._user_input == 'exit':
+                return self.goodbye()
+            if not self.valid_input(self._user_input):
+                raise ValueError
             self.show_house()
             self.get_user_choice()
         except ValueError:
