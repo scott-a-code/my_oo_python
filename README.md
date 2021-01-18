@@ -8,3 +8,12 @@
   - API data is turned into instances of Repository class
   - User is shown a numbered list their repos by name
   - User can input a number to see more details on the corresponding repository
+
+# Running Demo
+
+_Note: make sure you have [pipenv installed](https://github.com/getfutureproof/fp_guides_wiki/wiki/Virtual-Environment) before continuing._
+
+- `cd` into demo
+- `pipenv install -r requirements.txt` to install dependencies
+- `pipenv shell` to activate your virtual environment for the project
+- `python main.py` to run the script
