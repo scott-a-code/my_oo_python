@@ -11,13 +11,16 @@ class House():
     def _save(self):
         self.all.append(self)
 
-    def get_name(self):
+    @property
+    def name(self):
         return self._name
     
-    def get_region(self):
+    @property
+    def region(self):
         return self._region
 
-    def get_insignia(self):
+    @property
+    def insignia(self):
         return self._insignia
     
     @classmethod

@@ -21,7 +21,7 @@ class CLI():
 
     def menu(self):
         for idx, house in enumerate(House.all, start=1):
-            print(f'{idx}. {house.get_name()}')
+            print(f'{idx}. {house.name}')
         self.get_user_choice()
 
     def get_user_choice(self):
@@ -39,9 +39,9 @@ class CLI():
 
     def show_house(self):
         house = House.find_by_input(self._user_input)
-        print(f'\n{Format.BLUE}{Format.BOLD}{house.get_name()}{Format.CLEAR}')
-        print(f'\tRegion: {house.get_region()}')
-        print(f'\tInsignia: {house.get_insignia()}')
+        print(f'\n{Format.BLUE}{Format.BOLD}{house.name}{Format.CLEAR}')
+        print(f'\tRegion: {house.region}')
+        print(f'\tInsignia: {house.insignia}')
 
     @staticmethod
     def valid_input(i):
