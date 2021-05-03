@@ -14,6 +14,6 @@
 _Note: make sure you have [pipenv installed](https://github.com/getfutureproof/fp_guides_wiki/wiki/Virtual-Environment) before continuing._
 
 - `cd` into demo
-- `pipenv install -r requirements.txt` to install dependencies
 - `pipenv shell` to activate your virtual environment for the project
-- `python main.py` to run the script
+- `pipenv install` to install dependencies
+- `pipenv run start` or `python main.py` to run program
