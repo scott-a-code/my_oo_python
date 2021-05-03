@@ -51,4 +51,5 @@ class CLI():
     def goodbye():
         print(f'\n{Format.BLUE}{Format.BOLD}May the North be with you.{Format.CLEAR}\n')
 
-app = CLI()
+if __name__ == '__main__':
+    app = CLI()
